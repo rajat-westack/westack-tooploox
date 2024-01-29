@@ -28075,6 +28075,13 @@ div.chosen-container .chosen-drop .chosen-results li.result-selected,
   width: 100%;
   font-size: 24px;
 }
+#contact-form input[type="number"]::-webkit-inner-spin-button,
+#contact-form input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
 
 #contact-form input::-webkit-input-placeholder {
   color: #fff;
