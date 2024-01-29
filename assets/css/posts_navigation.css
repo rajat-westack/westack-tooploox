@@ -1,0 +1,194 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/sass-resources-loader/lib/loader.js??ruleSet[1].rules[1].use[4]!./src/components/template-parts/posts-navigation/_posts-navigation-styles.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * Bootstrap Variables
+ */
+/*
+ * Color system
+ */
+/**
+ * Grid
+ */
+/**
+ * Border Radius
+ */
+/**
+ * Fonts
+ */
+/**
+ * Crunch Utilities
+ */
+/**
+ * Variables
+ */
+/* ~~~~~~~~~~ WP Admin Bar heights ~~~~~~~~~~ */
+/* ~~~~~~~~~~ Settings ~~~~~~~~~~ */
+/* ~~~~~~~~~~ Fonts ~~~~~~~~~~ */
+/* ~~~~~~~~~~ Plugins ~~~~~~~~~~ */
+/* stylelint-disable */
+/**
+ * Mixins
+ */
+/* ~~~~~~~~~~ Helper Functions ~~~~~~~~~~ */
+/* ~~~~~ Strip Unit ~~~~~ */
+/* ~~~~~ Convert to REM ~~~~~ */
+/* ~~~~~ Get Crunch Spacer ~~~~~ */
+/* ~~~~~~~~~~~~ Fluid  ~~~~~~~~~~~~ */
+/* stylelint-disable */
+/**
+ * Fluid
+ */
+/* ~~~~~~~~ String split ~~~~~~~~ */
+/* ~~~~~~~~ String replace ~~~~~~~~ */
+/* ~~~~~~~~ Join sign with number  ~~~~~~~~ */
+/* ~~~~~~~~~~ String to number conversion by Hugo Giraudel ~~~~~~~~~~ */
+/* ~~~~~ Helper for fluid function ~~~~~ */
+/* ~~~~~ Letter-spacing functions ~~~~~ */
+/* ~~~~~~~~ Return index of array diff ~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~ Fluid ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~ Fluid margin/padding helpers ~~~~~~~~~ */
+/**
+ * Spacings
+ */
+/**
+ * Editor wysiwyg margins
+ */
+ .fz-mt-xsmall {
+    display: block !important;
+    margin-top: 0.5rem !important; }
+  
+  .fz-mb-xsmall {
+    display: block !important;
+    margin-bottom: 0.5rem !important; }
+  
+  .fz-mt-small {
+    display: block !important;
+    margin-top: 0.625rem !important; }
+  
+  .fz-mb-small {
+    display: block !important;
+    margin-bottom: 0.625rem !important; }
+  
+  .fz-mt-medium {
+    display: block !important;
+    margin-top: 1rem !important; }
+  
+  .fz-mb-medium {
+    display: block !important;
+    margin-bottom: 1rem !important; }
+  
+  .fz-mt-large {
+    display: block !important;
+    margin-top: 1.5rem !important; }
+  
+  .fz-mb-large {
+    display: block !important;
+    margin-bottom: 1.5rem !important; }
+  
+  .fz-mt-xlarge {
+    display: block !important;
+    margin-top: 2rem !important; }
+  
+  .fz-mb-xlarge {
+    display: block !important;
+    margin-bottom: 2rem !important; }
+  
+  .fz-mt-huge {
+    display: block !important;
+    margin-top: 3rem !important; }
+  
+  .fz-mb-huge {
+    display: block !important;
+    margin-bottom: 3rem !important; }
+  
+  /* ~~~~~~~~~~ Sizing Class Generator ~~~~~~~~~~ */
+  /* stylelint-disable */
+  /**
+   * Classes
+   */
+  /* ~~~~~~~~~~ Respond to specific brekpoint ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Bootsrap Container Max Width ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Transition ~~~~~~~~~~ */
+  /**
+   * Placeholders Template Part Styles
+   */
+  /* ~~~~~~~~~~ Background cover ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Object Fit ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Hide ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Adjustable Element ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Fill the whole space ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Optimize image contrast ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Font Size Classes ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Letter Spacing Classes ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Animated Border Bottom ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Lock Postion ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Hover opacity classes ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Flex 0 0 auto ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Text opacity ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Crunch Button ~~~~~~~~~~ */
+  @-webkit-keyframes moveUpInitial {
+    to {
+      -webkit-transform: translate3d(0, -105%, 0);
+              transform: translate3d(0, -105%, 0); } }
+  @keyframes moveUpInitial {
+    to {
+      -webkit-transform: translate3d(0, -105%, 0);
+              transform: translate3d(0, -105%, 0); } }
+  
+  @-webkit-keyframes moveUpEnd {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+              transform: translate3d(0, 100%, 0); }
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); } }
+  
+  @keyframes moveUpEnd {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+              transform: translate3d(0, 100%, 0); }
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); } }
+  
+  /**
+   *  Posts Navigation Template Part Styles
+   */
+  .post-type-video .posts-navigation {
+    padding-top: 0 !important; }
+    .post-type-video .posts-navigation .border-top {
+      border-top: 0 !important; }
+  
+  .single-newsletter .posts-navigation {
+    padding-top: 0 !important; }
+    .single-newsletter .posts-navigation .border-top {
+      border-top: 0 !important; }
+  
+  .posts-navigation__wrapper {
+    border-color: rgba(0, 0, 0, 0.15); }
+  
+  .posts-navigation__item:focus .posts-navigation__icon--prev svg, .posts-navigation__item:hover .posts-navigation__icon--prev svg {
+    -webkit-transform: translateX(-0.1875rem);
+            transform: translateX(-0.1875rem); }
+  
+  .posts-navigation__item:focus .posts-navigation__icon--next svg, .posts-navigation__item:hover .posts-navigation__icon--next svg {
+    -webkit-transform: translateX(0.1875rem);
+            transform: translateX(0.1875rem); }
+  
+  .posts-navigation__item-link:focus .animated-border-bottom, .posts-navigation__item-link:hover .animated-border-bottom {
+    background-size: 100% 100%; }
+  
+  .posts-navigation__icon {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%; }
+    .posts-navigation__icon svg {
+      -webkit-transition: -webkit-transform 0.2s ease-in-out;
+      transition: -webkit-transform 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out; }
+  

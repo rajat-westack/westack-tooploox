@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125 125">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ff85c7;
+      }
+    </style>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa 1">
+    <rect class="cls-3" x="27.19" y="25.94" width="73.11" height="73.11" transform="translate(-25.52 63.38) rotate(-45)"/>
+  </g>
+  <line class="cls-1" x1="63.74" y1="26.31" x2="63.74" y2="40"/>
+  <path class="cls-1" d="m104.24,62.5s-18.09,22.5-40.49,22.5-40.49-22.5-40.49-22.5c0,0,18.09-22.5,40.49-22.5s40.49,22.5,40.49,22.5Z"/>
+  <path class="cls-1" d="m63.74,40c12.44,0,22.53,10.07,22.54,22.5,0,12.44-10.07,22.53-22.5,22.54s-22.53-10.07-22.54-22.5c0-3.88.99-7.69,2.89-11.06"/>
+  <circle cx="63.74" cy="62.5" r="10.08"/>
+  <circle class="cls-1" cx="106.82" cy="31.45" r="3.45"/>
+  <polyline class="cls-1" points="77.53 42.7 77.53 31.48 104.1 31.48"/>
+  <circle class="cls-1" cx="39.62" cy="17.7" r="3.45"/>
+  <line class="cls-1" x1="39.62" y1="21.14" x2="39.62" y2="28"/>
+  <circle class="cls-1" cx="9.65" cy="28" r="3.45"/>
+  <polyline class="cls-1" points="46.51 38.38 46.51 28.04 12.38 28.04"/>
+  <circle class="cls-1" cx="55.13" cy="114.2" r="3.45"/>
+  <circle cx="103.38" cy="117.88" r="3.45"/>
+  <circle cx="63.74" cy="24.59" r="3.45"/>
+  <line class="cls-1" x1="55.13" y1="83.18" x2="55.13" y2="110.75"/>
+  <polyline class="cls-1" points="103.41 117.88 82.7 117.88 82.7 100.73"/>
+  <line class="cls-1" x1="14.63" y1="93.52" x2="55.13" y2="93.52"/>
+  <path class="cls-2" d="m67.19,59.06l-3.44,3.44,3.44,3.44,3.44-3.44-3.44-3.44Z"/>
+  <rect x="60.08" y="20.51" width="7.53" height="7.53"/>
+  <rect x="99.62" y="114.12" width="7.53" height="7.53"/>
+  <rect x="68.6" y="93.2" width="7.53" height="7.53"/>
+  <rect x="9.34" y="89.75" width="7.53" height="7.53"/>
+  <line class="cls-1" x1="72.36" y1="84.24" x2="72.36" y2="96.97"/>
+</svg>

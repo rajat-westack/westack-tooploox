@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 145 145" style="enable-background:new 0 0 145 145;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#1445F5;}
+	.st2{fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M-2.64,53.01"/>
+<g>
+	<rect x="20.36" y="13.32" class="st1" width="61.81" height="60.72"/>
+	<line class="st2" x1="53.4" y1="132.6" x2="92.08" y2="132.6"/>
+	<line class="st2" x1="12.3" y1="89.25" x2="12.3" y2="39.07"/>
+	<polyline class="st2" points="87.49,39.07 133.17,39.07 133.17,117.22 12.3,117.22 12.3,85.26 	"/>
+	<line class="st2" x1="72.74" y1="122.28" x2="72.74" y2="132.6"/>
+	<path d="M12.3,58.38"/>
+	<rect x="97.39" y="55.99" width="17.93" height="17.93"/>
+	<rect x="97.39" y="81.79" width="17.93" height="17.93"/>
+	<polygon class="st3" points="27.95,20.56 27.95,45.91 40.63,33.23 	"/>
+</g>
+</svg>

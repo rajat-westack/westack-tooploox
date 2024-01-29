@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 145 145" style="enable-background:new 0 0 145 145;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#FA8263;}
+	.st2{fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M-2.64,53.01"/>
+<g>
+	<g>
+		<rect x="41.19" y="30.73" class="st1" width="85.42" height="90.69"/>
+		<polyline class="st2" points="69.51,89.42 69.51,16.84 132.96,16.84 132.96,128.38 69.51,128.38 69.51,110.26 		"/>
+		<rect x="88.32" y="22.43" width="25.32" height="16.58"/>
+		<ellipse class="st3" cx="100.98" cy="107.31" rx="8.73" ry="8.74"/>
+		<path class="st0" d="M77.3,48.61"/>
+		<path class="st0" d="M17.32,48.61"/>
+	</g>
+	<polyline class="st2" points="28.72,61.22 53.01,61.22 53.01,132.78 12.31,132.78 12.31,97 	"/>
+	<polyline class="st2" points="12.31,97 12.31,61.22 28.72,61.22 	"/>
+	<rect x="16.35" y="66.51" width="32.51" height="58.95"/>
+</g>
+</svg>

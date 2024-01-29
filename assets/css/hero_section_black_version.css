@@ -1,0 +1,463 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/sass-resources-loader/lib/loader.js??ruleSet[1].rules[1].use[4]!./src/components/template-parts/hero-section-black-version/_hero-section-black-version-styles.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * Bootstrap Variables
+ */
+/*
+ * Color system
+ */
+/**
+ * Grid
+ */
+/**
+ * Border Radius
+ */
+/**
+ * Fonts
+ */
+/**
+ * Crunch Utilities
+ */
+/**
+ * Variables
+ */
+/* ~~~~~~~~~~ WP Admin Bar heights ~~~~~~~~~~ */
+/* ~~~~~~~~~~ Settings ~~~~~~~~~~ */
+/* ~~~~~~~~~~ Fonts ~~~~~~~~~~ */
+/* ~~~~~~~~~~ Plugins ~~~~~~~~~~ */
+/* stylelint-disable */
+/**
+ * Mixins
+ */
+/* ~~~~~~~~~~ Helper Functions ~~~~~~~~~~ */
+/* ~~~~~ Strip Unit ~~~~~ */
+/* ~~~~~ Convert to REM ~~~~~ */
+/* ~~~~~ Get Crunch Spacer ~~~~~ */
+/* ~~~~~~~~~~~~ Fluid  ~~~~~~~~~~~~ */
+/* stylelint-disable */
+/**
+ * Fluid
+ */
+/* ~~~~~~~~ String split ~~~~~~~~ */
+/* ~~~~~~~~ String replace ~~~~~~~~ */
+/* ~~~~~~~~ Join sign with number  ~~~~~~~~ */
+/* ~~~~~~~~~~ String to number conversion by Hugo Giraudel ~~~~~~~~~~ */
+/* ~~~~~ Helper for fluid function ~~~~~ */
+/* ~~~~~ Letter-spacing functions ~~~~~ */
+/* ~~~~~~~~ Return index of array diff ~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~ Fluid ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~ Fluid margin/padding helpers ~~~~~~~~~ */
+/**
+ * Spacings
+ */
+/**
+ * Editor wysiwyg margins
+ */
+ .fz-mt-xsmall {
+    display: block !important;
+    margin-top: 0.5rem !important; }
+  
+  .fz-mb-xsmall {
+    display: block !important;
+    margin-bottom: 0.5rem !important; }
+  
+  .fz-mt-small {
+    display: block !important;
+    margin-top: 0.625rem !important; }
+  
+  .fz-mb-small {
+    display: block !important;
+    margin-bottom: 0.625rem !important; }
+  
+  .fz-mt-medium {
+    display: block !important;
+    margin-top: 1rem !important; }
+  
+  .fz-mb-medium {
+    display: block !important;
+    margin-bottom: 1rem !important; }
+  
+  .fz-mt-large {
+    display: block !important;
+    margin-top: 1.5rem !important; }
+  
+  .fz-mb-large {
+    display: block !important;
+    margin-bottom: 1.5rem !important; }
+  
+  .fz-mt-xlarge {
+    display: block !important;
+    margin-top: 2rem !important; }
+  
+  .fz-mb-xlarge {
+    display: block !important;
+    margin-bottom: 2rem !important; }
+  
+  .fz-mt-huge {
+    display: block !important;
+    margin-top: 3rem !important; }
+  
+  .fz-mb-huge {
+    display: block !important;
+    margin-bottom: 3rem !important; }
+  
+  /* ~~~~~~~~~~ Sizing Class Generator ~~~~~~~~~~ */
+  /* stylelint-disable */
+  /**
+   * Classes
+   */
+  /* ~~~~~~~~~~ Respond to specific brekpoint ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Bootsrap Container Max Width ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Transition ~~~~~~~~~~ */
+  /**
+   * Placeholders Template Part Styles
+   */
+  /* ~~~~~~~~~~ Background cover ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Object Fit ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Hide ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Adjustable Element ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Fill the whole space ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Optimize image contrast ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Font Size Classes ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Letter Spacing Classes ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Animated Border Bottom ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Lock Postion ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Hover opacity classes ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Flex 0 0 auto ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Text opacity ~~~~~~~~~~ */
+  /* ~~~~~~~~~~ Crunch Button ~~~~~~~~~~ */
+  @-webkit-keyframes moveUpInitial {
+    to {
+      -webkit-transform: translate3d(0, -105%, 0);
+              transform: translate3d(0, -105%, 0); } }
+  @keyframes moveUpInitial {
+    to {
+      -webkit-transform: translate3d(0, -105%, 0);
+              transform: translate3d(0, -105%, 0); } }
+  
+  @-webkit-keyframes moveUpEnd {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+              transform: translate3d(0, 100%, 0); }
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); } }
+  
+  @keyframes moveUpEnd {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+              transform: translate3d(0, 100%, 0); }
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); } }
+  
+  /**
+   * Hero Section Black Version Template Part Styles
+   */
+  .hero-section-black-version {
+    height: 100vh; }
+    .hero-section-black-version h1 span {
+      padding-bottom: 1rem;
+      background: url(decor__custom-svg-underline--white.svg) 0 82% no-repeat;
+      background-size: 100% auto; }
+      @media (max-width: 767.98px) {
+        .hero-section-black-version h1 span {
+          background: url(decor__custom-svg-underline--white.svg) 0 80% no-repeat; } }
+    @media (min-width: 768px) {
+      .hero-section-black-version__scroll-label {
+        right: -1.25rem;
+        bottom: 10%;
+        width: 7rem;
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg); } }
+    @media (min-width: 768px) {
+      .hero-section-black-version__scroll-label:before {
+        content: '';
+        display: inline-block;
+        height: 1px;
+        margin-right: 0.625rem;
+        background-color: currentColor;
+        -webkit-animation: widthchange 3s infinite;
+                animation: widthchange 3s infinite; }
+      @-webkit-keyframes widthchange {
+        0% {
+          width: 0; }
+        100% {
+          width: 3.75rem; } }
+      @keyframes widthchange {
+        0% {
+          width: 0; }
+        100% {
+          width: 3.75rem; } } }
+    .hero-section-black-version .animation-block {
+      top: 0;
+      left: 0;
+      max-height: none;
+      pointer-events: none; }
+      @media (min-width: 992px) {
+        .hero-section-black-version .animation-block {
+          /* padding-left: 6.25%;  */
+        } }
+      .hero-section-black-version .animation-block .container {
+        opacity: 1; }
+      .hero-section-black-version .animation-block.active {
+        opacity: 1; }
+      .hero-section-black-version .animation-block.animation-1 .el-1 {
+        top: -webkit-calc(15% - .8438rem);
+        top: calc(15% - .8438rem);
+        left: 1rem;
+        display: none; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-1 .el-1 {
+            display: block;
+            -webkit-animation-delay: 1100ms;
+                    animation-delay: 1100ms; } }
+      .hero-section-black-version .animation-block.animation-1 .el-2 {
+        bottom: -webkit-calc(15%  - 1.4375rem);
+        bottom: calc(15%  - 1.4375rem);
+        left: 1rem;
+        -webkit-animation-delay: 300ms;
+                animation-delay: 300ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-1 .el-2 {
+            top: -webkit-calc(15%  - 1.4375rem);
+            top: calc(15%  - 1.4375rem);
+            bottom: auto;
+            left: 15%;
+            -webkit-animation-delay: 700ms;
+                    animation-delay: 700ms; } }
+      .hero-section-black-version .animation-block.animation-1 .el-3 {
+        top: -webkit-calc(15% - 1.5625rem);
+        top: calc(15% - 1.5625rem);
+        right: -webkit-calc(25% - 1.5625rem);
+        right: calc(25% - 1.5625rem);
+        display: none;
+        -webkit-animation-delay: 300ms;
+                animation-delay: 300ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-1 .el-3 {
+            display: block;
+            -webkit-animation-delay: 100ms;
+                    animation-delay: 100ms; } }
+      .hero-section-black-version .animation-block.animation-1 .el-4 {
+        right: 1rem;
+        bottom: -webkit-calc(15% - 1.8125rem);
+        bottom: calc(15% - 1.8125rem);
+        -webkit-animation-delay: 500ms;
+                animation-delay: 500ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-1 .el-4 {
+            top: 30%;
+            right: -webkit-calc(5% - 1.8125rem);
+            right: calc(5% - 1.8125rem);
+            -webkit-animation-delay: 600ms;
+                    animation-delay: 600ms; } }
+      .hero-section-black-version .animation-block.animation-1 .el-5 {
+        top: 45%;
+        right: -webkit-calc(5% - .9375rem);
+        right: calc(5% - .9375rem);
+        display: none;
+        -webkit-animation-delay: 500ms;
+                animation-delay: 500ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-1 .el-5 {
+            display: block;
+            -webkit-animation-delay: 200ms;
+                    animation-delay: 200ms; } }
+      .hero-section-black-version .animation-block.animation-1 .el-6 {
+        right: -webkit-calc(5% - .5rem);
+        right: calc(5% - .5rem);
+        bottom: 35%;
+        display: none;
+        -webkit-animation-delay: 600ms;
+                animation-delay: 600ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-1 .el-6 {
+            display: block;
+            -webkit-animation-delay: 800ms;
+                    animation-delay: 800ms; } }
+      .hero-section-black-version .animation-block.animation-1 .el-7 {
+        right: -webkit-calc(5% - 1.4375rem);
+        right: calc(5% - 1.4375rem);
+        bottom: -webkit-calc(10% - 2.375rem);
+        bottom: calc(10% - 2.375rem);
+        display: none;
+        -webkit-animation-delay: 700ms;
+                animation-delay: 700ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-1 .el-7 {
+            display: block;
+            -webkit-animation-delay: 500ms;
+                    animation-delay: 500ms; } }
+      .hero-section-black-version .animation-block.animation-1 .el-8 {
+        bottom: -webkit-calc(15% - .8125rem);
+        bottom: calc(15% - .8125rem);
+        left: 35%;
+        -webkit-animation-delay: 400ms;
+                animation-delay: 400ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-1 .el-8 {
+            right: -webkit-calc(25% - .8125rem);
+            right: calc(25% - .8125rem);
+            bottom: -webkit-calc(10% - .8125rem);
+            bottom: calc(10% - .8125rem);
+            left: auto;
+            -webkit-animation-delay: 300ms;
+                    animation-delay: 300ms; } }
+      .hero-section-black-version .animation-block.animation-1 .el-9 {
+        top: -webkit-calc(15% - 1.625rem);
+        top: calc(15% - 1.625rem);
+        right: 1rem;
+        -webkit-animation-delay: 200ms;
+                animation-delay: 200ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-1 .el-9 {
+            top: auto;
+            right: 50%;
+            bottom: -webkit-calc(10% - 1.625rem);
+            bottom: calc(10% - 1.625rem);
+            -webkit-animation-delay: 900ms;
+                    animation-delay: 900ms; } }
+      .hero-section-black-version .animation-block.animation-1 .el-10 {
+        top: -webkit-calc(15% - 1.8125rem);
+        top: calc(15% - 1.8125rem);
+        left: 55%;
+        -webkit-animation-delay: 100ms;
+                animation-delay: 100ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-1 .el-10 {
+            top: auto;
+            bottom: -webkit-calc(10% - 1.8125rem);
+            bottom: calc(10% - 1.8125rem);
+            left: 35%;
+            -webkit-animation-delay: 400ms;
+                    animation-delay: 400ms; } }
+      .hero-section-black-version .animation-block.animation-1 .el-11 {
+        top: -webkit-calc(15% - 1.625rem);
+        top: calc(15% - 1.625rem);
+        left: 1rem; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-1 .el-11 {
+            top: auto;
+            bottom: -webkit-calc(10% - 1.625rem);
+            bottom: calc(10% - 1.625rem);
+            -webkit-animation-delay: 900ms;
+                    animation-delay: 900ms; } }
+      .hero-section-black-version .animation-block.animation-2 .el-1 {
+        top: -webkit-calc(15% - 2rem);
+        top: calc(15% - 2rem);
+        left: 1rem; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-2 .el-1 {
+            -webkit-animation-delay: 600ms;
+                    animation-delay: 600ms; } }
+      .hero-section-black-version .animation-block.animation-2 .el-2 {
+        top: -webkit-calc(15% - 1.5625rem);
+        top: calc(15% - 1.5625rem);
+        left: 35%;
+        -webkit-animation-delay: 100ms;
+                animation-delay: 100ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-2 .el-2 {
+            left: 20%;
+            -webkit-animation-delay: 400ms;
+                    animation-delay: 400ms; } }
+      .hero-section-black-version .animation-block.animation-2 .el-3 {
+        top: -webkit-calc(15% - 1.25rem);
+        top: calc(15% - 1.25rem);
+        right: 1rem;
+        -webkit-animation-delay: 200ms;
+                animation-delay: 200ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-2 .el-3 {
+            right: auto;
+            left: 50%;
+            -webkit-animation-delay: 1000ms;
+                    animation-delay: 1000ms; } }
+      .hero-section-black-version .animation-block.animation-2 .el-4 {
+        bottom: -webkit-calc(15% - 1.625rem);
+        bottom: calc(15% - 1.625rem);
+        -webkit-animation-delay: 300ms;
+                animation-delay: 300ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-2 .el-4 {
+            top: -webkit-calc(15% - 1.625rem);
+            top: calc(15% - 1.625rem);
+            right: 20%;
+            bottom: auto;
+            -webkit-animation-delay: 500ms;
+                    animation-delay: 500ms; } }
+      .hero-section-black-version .animation-block.animation-2 .el-5 {
+        top: 35%;
+        right: -webkit-calc(5% - 1.6875rem);
+        right: calc(5% - 1.6875rem);
+        display: none; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-2 .el-5 {
+            display: block;
+            -webkit-animation-delay: 100ms;
+                    animation-delay: 100ms; } }
+      .hero-section-black-version .animation-block.animation-2 .el-6 {
+        top: 55%;
+        right: -webkit-calc(5% - .5rem);
+        right: calc(5% - .5rem);
+        display: none; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-2 .el-6 {
+            display: block;
+            -webkit-animation-delay: 700ms;
+                    animation-delay: 700ms; } }
+      .hero-section-black-version .animation-block.animation-2 .el-7 {
+        right: -webkit-calc(5% - 1.2813rem);
+        right: calc(5% - 1.2813rem);
+        bottom: -webkit-calc(15% - 1.2813rem);
+        bottom: calc(15% - 1.2813rem);
+        display: none; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-2 .el-7 {
+            bottom: -webkit-calc(10% - 1.2813rem);
+            bottom: calc(10% - 1.2813rem);
+            display: block;
+            -webkit-animation-delay: 1000ms;
+                    animation-delay: 1000ms; } }
+      .hero-section-black-version .animation-block.animation-2 .el-8 {
+        right: 40%;
+        bottom: -webkit-calc(15% - .9375rem);
+        bottom: calc(15% - .9375rem);
+        -webkit-animation-delay: 400ms;
+                animation-delay: 400ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-2 .el-8 {
+            right: 50%;
+            bottom: -webkit-calc(10% - .9375rem);
+            bottom: calc(10% - .9375rem);
+            -webkit-animation-delay: 200ms;
+                    animation-delay: 200ms; } }
+      .hero-section-black-version .animation-block.animation-2 .el-9 {
+        bottom: -webkit-calc(10% - 2rem);
+        bottom: calc(10% - 2rem);
+        left: 35%;
+        display: none; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-2 .el-9 {
+            display: block;
+            -webkit-animation-delay: 300ms;
+                    animation-delay: 300ms; } }
+      .hero-section-black-version .animation-block.animation-2 .el-10 {
+        right: 1rem;
+        bottom: -webkit-calc(15% - 1.6875rem);
+        bottom: calc(15% - 1.6875rem);
+        -webkit-animation-delay: 500ms;
+                animation-delay: 500ms; }
+        @media (min-width: 992px) {
+          .hero-section-black-version .animation-block.animation-2 .el-10 {
+            right: auto;
+            bottom: -webkit-calc(10% - 1.6875rem);
+            bottom: calc(10% - 1.6875rem);
+            left: 1rem;
+            -webkit-animation-delay: 800ms;
+                    animation-delay: 800ms; } }
+  
