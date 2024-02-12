@@ -37,6 +37,60 @@
     <script src="assets/js/jquery-migrate.min.js"></script>
 
     <link rel="shortlink" href="https://westack.ai/" />
+
+    <!-- Contact Form JS  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('C-T8pFrTVlh25HIH3');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var form = document.getElementById('contact-form');
+            var sendButton = document.querySelector('.send-message-btn');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+
+                // Get form values
+                var formData = new FormData(form);
+                var servicesNeeded = [];
+
+                formData.forEach(function (value, key) {
+                    if (key === 'services_do_you_need') {
+                        servicesNeeded.push(value);
+                    }
+                });
+
+                // Combine services into a single field
+                var combinedServices = servicesNeeded.join(', ');
+                formData.set('services_do_you_need', combinedServices);
+
+                // Change button to loading state
+                sendButton.innerText = 'Sending...';
+                sendButton.disabled = true;
+
+                emailjs.sendForm('service_06fsz1j', 'template_6oyurkx', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+
+                        // Reset form and button state after successful submission
+                        form.reset();
+                        sendButton.innerText = 'Send Message';
+                        sendButton.disabled = false;
+                    }, function (error) {
+                        console.log('FAILED...', error);
+
+                        // Reset button state on error
+                        sendButton.innerText = 'Send Message';
+                        sendButton.disabled = false;
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body class="home page-template-default page page-id-2">
@@ -70,7 +124,7 @@
 
         <main id="main">
             <section
-                class="hero-section-black-version bg-black position-relative d-flex align-items-center c-pt-9 c-pb-11"
+                class="hero-section-black-version bg-black position-relative d-flex align-items-center c-pt-0 c-pb-11"
                 data-immerser-layer data-immerser-layer-config='{"nav":"-contrast","mburger":"-contrast"}'>
                 <span
                     class="hero-section-black-version__scroll-label font-size-10 fw-light d-none d-md-inline-flex align-items-center justify-content-end position-absolute text-uppercase text-white">Scroll</span>
@@ -138,7 +192,10 @@
                 <div class="container position-relative z-index-1">
                     <div class="row">
                         <div class="col-lg-10 c-pt-8">
-                            <h1 class="text-white">The <span>software development company</span> you are looking for
+                            <!-- <h1 class="text-white">The <span>software development company</span> you are looking for
+                            </h1> -->
+                            <h1 class="text-white">Your blueprint for<span style="color: #f7cc3d;"> Digital
+                                    Success</span>
                             </h1>
                         </div>
                     </div>
@@ -146,10 +203,15 @@
                         <div class="col-lg-8">
                             <div class="entry-content c-mt-5 font-size-20 text-white">
                                 <p>
-                                    <span style="font-weight: 400;">
+                                    <!-- <span style="font-weight: 400;">
                                         Westack offers custom software development services that help innovative
                                         companies and startups design and build digital products with AI, mobile, and
                                         web technologies.
+                                    </span> -->
+                                    <span style="font-weight: 400;">
+                                        Westack crafts custom software solutions for innovative companies and startups,
+                                        integrating AI, mobile, and web
+                                        technologies to bring digital products to life.
                                     </span>
                                 </p>
                             </div>
@@ -175,9 +237,10 @@
                 data-immerser-layer data-immerser-layer-config="{}">
                 <div class="container c-pt-10 c-pb-10" data-anim="fade-up">
                     <div class="row">
-                        <div class="col-md-5 col-lg-5 col-xl-4 c-pr-xl-0">
+                        <div class="col-md-5 col-lg-6 col-xl-5 c-pr-xl-0">
                             <div class="acf-block-services__left-nav position-sticky">
-                                <h2 class="fw-normal">What we can do for you</h2>
+                                <!-- <h2 class="fw-normal">What we can do for you</h2> -->
+                                <h2 class="fw-normal">How we can serve you:</h2>
 
                                 <div class="entry-content c-mt-6 c-mb-3 c-my-md-6 font-size-24 line-height-1-3">
                                     <p>
@@ -220,10 +283,10 @@
                                 <div>
                                     <h3
                                         class="single-service__title h4 animated-border-bottom animated-border-bottom--width-2 d-inline">
-                                        Generative AI</h3>
+                                        Cloud and Devops</h3>
 
                                     <div class="entry-content font-size-20 line-height-1-4">
-                                        Accelerate your business with generative AI-induced hyper-efficiency
+                                        Empowering businesses with Cloud and DevOps expertise.
                                     </div>
                                 </div>
                             </div>
@@ -375,15 +438,15 @@
                                         </div>
                                         <div class="d-flex flex-column justify-content-center c-py-7 c-py-lg-0">
                                             <div class="c-mb-3">
-                                                <span class="font-size-20 line-height-1-4 fw-bold">Spire Health</span>
+                                                <span class="font-size-20 line-height-1-4 fw-bold">ShotShort</span>
                                             </div>
 
-                                            <h3 class="h4 fw-normal">Tooploox Partners featuring Spire Health</h3>
+                                            <!-- <h3 class="h4 fw-normal">Tooploox Partners featuring Spire Health</h3> -->
 
-                                            <div class="d-flex flex-wrap c-mt-3 c-pt-1">
-                                                <span
+                                            <div class="d-flex flex-wrap c-mt-0 c-pt-1">
+                                                <!-- <span
                                                     class="acf-block-case-studies__category-wrapper d-flex align-items-center text-white text-opacity-0-5 text-uppercase font-size-12">
-                                                    Mobile App Development </span>
+                                                    Mobile App Development </span> -->
 
                                                 <span
                                                     class="acf-block-case-studies__category-wrapper d-flex align-items-center text-white text-opacity-0-5 text-uppercase font-size-12">
@@ -395,9 +458,10 @@
                                             </div>
 
                                             <p class="d-flex flex-wrap c-mt-3 c-pt-1">
-                                                We redesigned the app and re-engineered existing workflows and
-                                                procedures on the backend to provide a better device to cure respiratory
-                                                diseases.
+                                                We've meticulously crafted a new website from the ground up, redesigning
+                                                the user experience and reimagining backend
+                                                processes to offer an enhanced platform dedicated to combating
+                                                respiratory diseases.
                                             </p>
                                         </div>
                                     </a>
@@ -423,25 +487,30 @@
                                         </div>
                                         <div class="d-flex flex-column justify-content-center c-py-7 c-py-lg-0">
                                             <div class="c-mb-3">
-                                                <span class="font-size-20 line-height-1-4 fw-bold">Virtum</span>
+                                                <span class="font-size-20 line-height-1-4 fw-bold">Gamingmoves</span>
                                             </div>
 
-                                            <h3 class="h4 fw-normal">Virtum &#x2013; treating cancer with AI-powered
-                                                imaging healthcare</h3>
+                                            <!-- <h3 class="h4 fw-normal">Virtum &#x2013; treating cancer with AI-powered
+                                                imaging healthcare</h3> -->
 
-                                            <div class="d-flex flex-wrap c-mt-3 c-pt-1">
+                                            <div class="d-flex flex-wrap c-mt-0 c-pt-1">
                                                 <span
                                                     class="acf-block-case-studies__category-wrapper d-flex align-items-center text-white text-opacity-0-5 text-uppercase font-size-12">
-                                                    Cloud processing </span>
+                                                    Web Application Development </span>
 
                                                 <span
                                                     class="acf-block-case-studies__category-wrapper d-flex align-items-center text-white text-opacity-0-5 text-uppercase font-size-12">
-                                                    Digital histopathology </span>
+                                                    Product Design </span>
                                             </div>
 
                                             <p class="d-flex flex-wrap c-mt-3 c-pt-1">
-                                                Tooploox research tackled cancer treatment by providing an AI-ready,
-                                                Google docs-like digital histopathology platform!
+                                                GamingMoves is your ultimate destination for all things gaming, offering
+                                                insightful and engaging blog posts covering the
+                                                latest trends and hottest games in the industry. Whether you're a
+                                                seasoned gamer or just starting your journey, our
+                                                curated content keeps you informed and entertained, diving deep into the
+                                                world of gaming with reviews, previews, and
+                                                expert analysis.
                                             </p>
                                         </div>
                                     </a>
@@ -466,17 +535,27 @@
                                         </div>
                                         <div class="d-flex flex-column justify-content-center c-py-7 c-py-lg-0">
                                             <div class="c-mb-3">
-                                                <span class="font-size-20 line-height-1-4 fw-bold">ETH Zurich</span>
+                                                <span class="font-size-20 line-height-1-4 fw-bold">WOWS</span>
                                             </div>
 
-                                            <h3 class="h4 fw-normal">Essential Vision: ETH Zurich &#x2013; using
-                                                augmented reality in training healthcare professionals</h3>
+                                            <div class="d-flex flex-wrap c-mt-0 c-pt-1">
+                                                <span
+                                                    class="acf-block-case-studies__category-wrapper d-flex align-items-center text-white text-opacity-0-5 text-uppercase font-size-12">
+                                                    Mobile Application Development </span>
 
-                                            <div class="d-flex flex-wrap c-mt-3 c-pt-1"></div>
+                                                <span
+                                                    class="acf-block-case-studies__category-wrapper d-flex align-items-center text-white text-opacity-0-5 text-uppercase font-size-12">
+                                                    Product Design </span>
+                                            </div>
+
+                                            <!-- <h3 class="h4 fw-normal">Essential Vision: ETH Zurich &#x2013; using
+                                                augmented reality in training healthcare professionals</h3> -->
+
+                                            <!-- <div class="d-flex flex-wrap c-mt-3 c-pt-1"></div> -->
 
                                             <p class="d-flex flex-wrap c-mt-3 c-pt-1">
-                                                Together with a top European university, we designed and delivered an
-                                                Augmented Reality-powered training device for training medical staff.
+                                                Get persona based recommendations, connect with friends who have similar
+                                                interests and recommend movie to them.
                                             </p>
                                         </div>
                                     </a>
@@ -500,34 +579,35 @@
                                         </div>
                                         <div class="d-flex flex-column justify-content-center c-py-7 c-py-lg-0">
                                             <div class="c-mb-3">
-                                                <span class="font-size-20 line-height-1-4 fw-bold">Light</span>
+                                                <span class="font-size-20 line-height-1-4 fw-bold">Marketixe</span>
                                             </div>
 
-                                            <h3 class="h4 fw-normal">Lights&#x2019; Clarity Platform &#x2013; multi-view
-                                                Depth Perception for the next-generation of Vehicles</h3>
+                                            <!-- <h3 class="h4 fw-normal">Lights&#x2019; Clarity Platform &#x2013; multi-view
+                                                Depth Perception for the next-generation of Vehicles</h3> -->
 
-                                            <div class="d-flex flex-wrap c-mt-3 c-pt-1">
+                                            <div class="d-flex flex-wrap c-mt-0 c-pt-1">
                                                 <span
                                                     class="acf-block-case-studies__category-wrapper d-flex align-items-center text-white text-opacity-0-5 text-uppercase font-size-12">
-                                                    Deep Learning </span>
+                                                    Web Application Development </span>
 
                                                 <span
                                                     class="acf-block-case-studies__category-wrapper d-flex align-items-center text-white text-opacity-0-5 text-uppercase font-size-12">
-                                                    Machine Learning </span>
+                                                    Product Design </span>
 
-                                                <span
+                                                <!-- <span
                                                     class="acf-block-case-studies__category-wrapper d-flex align-items-center text-white text-opacity-0-5 text-uppercase font-size-12">
                                                     Computer Vision </span>
 
                                                 <span
                                                     class="acf-block-case-studies__category-wrapper d-flex align-items-center text-white text-opacity-0-5 text-uppercase font-size-12">
-                                                    3D Vision </span>
+                                                    3D Vision </span> -->
                                             </div>
 
                                             <p class="d-flex flex-wrap c-mt-3 c-pt-1">
-                                                The Tooploox engineering team supported the construction of the
-                                                world&#x2019;s best stereoscopic vision cameras, which set the industry
-                                                gold standard on the autonomous vehicle market.
+                                                We craft ideas into extraordinary masterpieces; we produce virality with
+                                                creativity by tapping into the unimagined,
+                                                taking your brand on a high-speed jet to the top.
+
                                             </p>
                                         </div>
                                     </a>
@@ -542,81 +622,49 @@
                                         class="acf-block-case-studies__image-wrapper position-relative overflow-hidden js-showcase-image-transformer">
                                         <a href="#" data-cursor-color="cursor-white">
                                             <img loading="lazy" decoding="async" width="2880" height="1616"
-                                                src="https://tooploox.com/wp-content/uploads/2023/03/spire_cover.png"
+                                                src="/assets/images/shortshot.jpeg"
                                                 class="acf-block-case-studies__image js-showcase-scroll-item-image position-absolute object-fit-cover lazyload"
-                                                alt srcset="
-                                                        https://tooploox.com/wp-content/uploads/2023/03/spire_cover.png           2880w,
-                                                        https://tooploox.com/wp-content/uploads/2023/03/spire_cover-1536x862.png  1536w,
-                                                        https://tooploox.com/wp-content/uploads/2023/03/spire_cover-2048x1149.png 2048w,
-                                                        https://tooploox.com/wp-content/uploads/2023/03/spire_cover-1920x1077.png 1920w,
-                                                        https://tooploox.com/wp-content/uploads/2023/03/spire_cover-1560x875.png  1560w,
-                                                        https://tooploox.com/wp-content/uploads/2023/03/spire_cover-700x393.png    700w,
-                                                        https://tooploox.com/wp-content/uploads/2023/03/spire_cover-570x320.png    570w,
-                                                        https://tooploox.com/wp-content/uploads/2023/03/spire_cover-420x236.png    420w,
-                                                        https://tooploox.com/wp-content/uploads/2023/03/spire_cover-240x135.png    240w
-                                                    " sizes="(max-width: 2880px) 100vw, 2880px" />
+                                                alt srcset="/assets/images/shortshot.jpeg"
+                                                sizes="(max-width: 2880px) 100vw, 2880px" />
                                         </a>
 
                                         <a href="#" data-cursor-color="cursor-white">
                                             <img loading="lazy" decoding="async" width="2500" height="1541"
-                                                src="https://tooploox.com/wp-content/uploads/2022/02/fota_1.png"
+                                                src="/assets/images/gam.png"
                                                 class="acf-block-case-studies__image js-showcase-scroll-item-image position-absolute object-fit-cover lazyload"
-                                                alt srcset="
-                                                        https://tooploox.com/wp-content/uploads/2022/02/fota_1.png           2500w,
-                                                        https://tooploox.com/wp-content/uploads/2022/02/fota_1-1536x947.png  1536w,
-                                                        https://tooploox.com/wp-content/uploads/2022/02/fota_1-2048x1262.png 2048w,
-                                                        https://tooploox.com/wp-content/uploads/2022/02/fota_1-1920x1183.png 1920w,
-                                                        https://tooploox.com/wp-content/uploads/2022/02/fota_1-1560x962.png  1560w,
-                                                        https://tooploox.com/wp-content/uploads/2022/02/fota_1-700x431.png    700w,
-                                                        https://tooploox.com/wp-content/uploads/2022/02/fota_1-570x351.png    570w,
-                                                        https://tooploox.com/wp-content/uploads/2022/02/fota_1-420x259.png    420w,
-                                                        https://tooploox.com/wp-content/uploads/2022/02/fota_1-240x148.png    240w
-                                                    " sizes="(max-width: 2500px) 100vw, 2500px" />
+                                                alt srcset="/assets/images/gam.png"
+                                                sizes="(max-width: 2500px) 100vw, 2500px" />
                                         </a>
 
                                         <a href="#" data-cursor-color="cursor-white">
                                             <img loading="lazy" decoding="async" width="1920" height="1447"
-                                                src="https://tooploox.com/wp-content/uploads/2023/01/Essential-Vision-ETH-Zurich-using-augmented-reality-in-training-healthcare-professionals.jpeg"
+                                                src="/assets/images/wows.jpeg"
                                                 class="acf-block-case-studies__image js-showcase-scroll-item-image position-absolute object-fit-cover lazyload"
                                                 alt="Essential Vision: ETH Zurich - using augmented reality in training healthcare professionals"
-                                                srcset="
-                                                        https://tooploox.com/wp-content/uploads/2023/01/Essential-Vision-ETH-Zurich-using-augmented-reality-in-training-healthcare-professionals.jpeg           1920w,
-                                                        https://tooploox.com/wp-content/uploads/2023/01/Essential-Vision-ETH-Zurich-using-augmented-reality-in-training-healthcare-professionals-1536x1158.jpeg 1536w,
-                                                        https://tooploox.com/wp-content/uploads/2023/01/Essential-Vision-ETH-Zurich-using-augmented-reality-in-training-healthcare-professionals-1560x1176.jpeg 1560w,
-                                                        https://tooploox.com/wp-content/uploads/2023/01/Essential-Vision-ETH-Zurich-using-augmented-reality-in-training-healthcare-professionals-700x528.jpeg    700w,
-                                                        https://tooploox.com/wp-content/uploads/2023/01/Essential-Vision-ETH-Zurich-using-augmented-reality-in-training-healthcare-professionals-570x430.jpeg    570w,
-                                                        https://tooploox.com/wp-content/uploads/2023/01/Essential-Vision-ETH-Zurich-using-augmented-reality-in-training-healthcare-professionals-420x317.jpeg    420w,
-                                                        https://tooploox.com/wp-content/uploads/2023/01/Essential-Vision-ETH-Zurich-using-augmented-reality-in-training-healthcare-professionals-240x180.jpeg    240w
-                                                    " sizes="(max-width: 1920px) 100vw, 1920px" />
+                                                srcset="/assets/images/wows.jpeg"
+                                                sizes="(max-width: 1920px) 100vw, 1920px" />
                                         </a>
 
                                         <a href="#" data-cursor-color="cursor-white">
                                             <img loading="lazy" decoding="async" width="1848" height="705"
-                                                src="https://tooploox.com/wp-content/uploads/2022/09/light_2.png"
+                                                src="/assets/images/marketixe.png"
                                                 class="acf-block-case-studies__image js-showcase-scroll-item-image position-absolute object-fit-cover lazyload"
-                                                alt srcset="
-                                                        https://tooploox.com/wp-content/uploads/2022/09/light_2.png          1848w,
-                                                        https://tooploox.com/wp-content/uploads/2022/09/light_2-1536x586.png 1536w,
-                                                        https://tooploox.com/wp-content/uploads/2022/09/light_2-1560x595.png 1560w,
-                                                        https://tooploox.com/wp-content/uploads/2022/09/light_2-700x267.png   700w,
-                                                        https://tooploox.com/wp-content/uploads/2022/09/light_2-570x217.png   570w,
-                                                        https://tooploox.com/wp-content/uploads/2022/09/light_2-420x160.png   420w,
-                                                        https://tooploox.com/wp-content/uploads/2022/09/light_2-240x92.png    240w
-                                                    " sizes="(max-width: 1848px) 100vw, 1848px" />
+                                                alt srcset="/assets/images/marketixe.png"
+                                                sizes="(max-width: 1848px) 100vw, 1848px" />
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="acf-block-case-studies__link col-12 col-md-6">
                             <a href="https://tooploox.com/case-studies" target="_self"
                                 class="crunch-button crunch-button__text-only crunch-button__text-only--white-color crunch-button__text-only-- text-uppercase">
                                 See all projects
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -973,7 +1021,7 @@
                         </div>
 
                         <div
-                            class="col-md-5 col-lg-6 col-xl-6 order-1 order-md-2 d-none d-md-block d-lg-flex align-items-center">
+                            class="col-md-5 col-lg-6 col-xl-6 order-1 order-md-2 d-none d-md-block d-lg-flex align-items-center pt-5">
                             <form id="contact-form">
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -997,35 +1045,70 @@
                                         <textarea required name="message" id="message" cols="30" rows="4"
                                             placeholder="Write your message.."></textarea>
                                     </div>
-
-
-                                    <!-- <div class="row">
-                                        <div class="col-lg-12">
-                                            <p class="select-subject">Select Subject?</p>
-                                            <div class="select-options">
-                                                <div>
-                                                    <input class="radio-input" type="radio" id="general_inquiry"
-                                                        name="select-options" value="General Inquiry" checked>
-                                                    <label for="general_inquiry">General Inquiry</label><br>
-                                                </div>
-                                                <div>
-                                                    <input class="radio-input" type="radio" id="web_development"
-                                                        name="select-options" value="Web Development">
-                                                    <label for="web_development">Web Development</label><br>
-                                                </div>
-                                                <div>
-                                                    <input class="radio-input" type="radio" id="mobile_development"
-                                                        name="select-options" value="Mobile Development">
-                                                    <label for="mobile_development">Mobile Development</label><br>
-                                                </div>
-                                                <div>
-                                                    <input class="radio-input" type="radio" id="cloud_services"
-                                                        name="select-options" value="Cloud Services">
-                                                    <label for="cloud_services">Cloud Services</label><br>
-                                                </div>
-                                            </div>
+                                    <div class="col-lg-12">
+                                        <h4 style="color: #fff;">What kind of services do you need?*</h4>
+                                        <div class="input">
+                                            <ul required="" role="checkbox" class="inputs-list multi-container">
+                                                <li class="hs-form-checkbox" role="checkbox"><label
+                                                        for="services_do_you_need0-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                        class="hs-form-checkbox-display"><input
+                                                            id="services_do_you_need0-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                            class="hs-input" type="checkbox" name="services_do_you_need"
+                                                            value="AI"><span>AI</span></label>
+                                                </li>
+                                                <li class="hs-form-checkbox" role="checkbox"><label
+                                                        for="services_do_you_need1-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                        class="hs-form-checkbox-display"><input
+                                                            id="services_do_you_need1-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                            class="hs-input" type="checkbox" name="services_do_you_need"
+                                                            value="AI Briefing Session"><span>AI
+                                                            Briefing Session</span></label></li>
+                                                <li class="hs-form-checkbox" role="checkbox"><label
+                                                        for="services_do_you_need2-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                        class="hs-form-checkbox-display"><input
+                                                            id="services_do_you_need2-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                            class="hs-input" type="checkbox" name="services_do_you_need"
+                                                            value="Generative AI"><span>Generative
+                                                            AI</span></label></li>
+                                                <li class="hs-form-checkbox" role="checkbox"><label
+                                                        for="services_do_you_need3-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                        class="hs-form-checkbox-display"><input
+                                                            id="services_do_you_need3-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                            class="hs-input" type="checkbox" name="services_do_you_need"
+                                                            value="Web Development"><span>Web
+                                                            Development</span></label></li>
+                                                <li class="hs-form-checkbox" role="checkbox"><label
+                                                        for="services_do_you_need4-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                        class="hs-form-checkbox-display"><input
+                                                            id="services_do_you_need4-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                            class="hs-input" type="checkbox" name="services_do_you_need"
+                                                            value="Mobile Development"><span>Mobile
+                                                            Development</span></label></li>
+                                                <li class="hs-form-checkbox" role="checkbox"><label
+                                                        for="services_do_you_need5-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                        class="hs-form-checkbox-display"><input
+                                                            id="services_do_you_need5-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                            class="hs-input" type="checkbox" name="services_do_you_need"
+                                                            value="Product Design"><span>Product
+                                                            Design</span></label></li>
+                                                <li class="hs-form-checkbox" role="checkbox"><label
+                                                        for="services_do_you_need6-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                        class="hs-form-checkbox-display"><input
+                                                            id="services_do_you_need6-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                            class="hs-input" type="checkbox" name="services_do_you_need"
+                                                            value="Product Discovery"><span>Product
+                                                            Discovery</span></label></li>
+                                                <li class="hs-form-checkbox" role="checkbox"><label
+                                                        for="services_do_you_need7-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                        class="hs-form-checkbox-display"><input
+                                                            id="services_do_you_need7-738479f6-cd0c-491e-8cd8-c0e460d44f27"
+                                                            class="hs-input" type="checkbox" name="services_do_you_need"
+                                                            value="Other"><span>Other</span></label>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </div> -->
+                                    </div>
+
                                     <!-- <div class="row">
                                         <div class="col-lg-12">
                                             <label for="message">Message</label>

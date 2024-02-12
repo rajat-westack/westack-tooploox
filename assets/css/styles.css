@@ -28093,7 +28093,7 @@ div.chosen-container .chosen-drop .chosen-results li.result-selected,
   border-bottom: 2px solid white;
   color: #fff;
   outline: none;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
   width: 100%;
   font-size: 24px;
 }
@@ -28102,4 +28102,39 @@ div.chosen-container .chosen-drop .chosen-results li.result-selected,
   color: #000;
   border-radius: 30px;
   padding: 12px 26px;
+}
+#contact-form ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 20px;
+}
+#contact-form ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 4px 6px;
+  background-color: #000;
+}
+
+#contact-form ul li label input {
+  position: relative;
+  left: 20px;
+  z-index: -1;
+  margin-left: -10px;
+  margin-bottom: 0;
+}
+
+#contact-form ul li label span {
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 5px 20px;
+  margin: 5px auto;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#contact-form ul li label input:checked + span,
+[type="radio"]:checked + span {
+  background-color: #fff;
+  color: #000;
 }
